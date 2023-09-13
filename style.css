@@ -1,0 +1,316 @@
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+  color: #434343;
+  cursor: pointer;
+  opacity: 0.8;
+  padding: 0 10px;
+}
+
+a:hover {
+  opacity: 1;
+  background-color: burlywood;
+  border-radius: 20px;
+}
+
+header{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+header img {
+  width: 20%;
+}
+
+nav {
+  display: flex;
+  width: 350px;
+  justify-content: space-between;
+}
+a {
+  text-decoration: none;
+}
+
+.hero {
+  background-image: url('images/farao_hero.jpeg');
+  height: 100vh;
+  background-size: cover;
+  /* color:rgb(70, 87, 103); */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+  width: 50%;
+  padding: 10px;
+}
+
+.hero h3{
+  font-size: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin-top: 10px;
+  border-radius: 20px;
+  width: 50%;
+  padding: 10px;
+
+}
+
+.hero .btn {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 50%;
+  border-radius: 20px;
+  margin-top: 10px;
+  padding: 10px;
+  color: rgb(70, 87, 103);
+  background-color: white;
+  text-transform: uppercase;
+}
+
+.sobre-sapatos {
+  padding: 100px 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sobre-sapatos p {
+  padding: 2% 5%;
+  width: 80%;
+}
+
+.sobre-sapatos hr {
+  border: 2px solid #d3d2d2;
+  width: 10%;
+  margin-bottom: 50px;
+}
+
+.sobre-sapatos .grid{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+
+.sobre-sapatos .grid div {
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  background-clip: content-box;
+  padding: 20px;
+}
+
+.large {
+  flex-basis: 60%;
+}
+.small{
+  flex-basis: 30%;
+}
+
+.hr-features {
+  width: 50%;
+  margin: 80px auto;
+  border: 3px solid;
+  border-radius: 10px;
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 50px;
+}
+
+.newsletter h3 {
+  font-size: 25px;
+  margin-bottom: 35px;
+  text-align: center;
+  color: black;
+}
+
+.newsletter p {
+  max-width: 800px;
+  margin-bottom: 35px;
+  text-align: center;
+  color: black;
+}
+
+.newsletter form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 80%;
+  max-width: 800px;
+}
+
+.newsletter input {
+  padding: 15px;
+  border: 1px solid black;
+  border-radius: 4px;
+  /* flex: 1; */
+  flex-grow: 1;
+}
+
+.newsletter button {
+  margin: 10px;
+  padding: 15px;
+  background-color: rgb(255, 166, 0);
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 4px;
+}
+
+.footer {
+  background-color: rgb(62, 78, 188);
+  color: rgb(255, 166, 0);
+  padding: 100px 50px;
+}
+
+.icons-container {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.icons-container .bi {
+  margin: 0 20px;
+}
+
+.direitos-reservados {
+  text-align: center;
+}
+
+
+@media screen and (max-width: 426px){
+  .hero h1  {
+    width: 90%;
+    font-size: 1.8rem;
+  }
+  .hero h3 {
+    width: 90%;
+  }
+ .sobre-sapatos .grid {
+    display: block;
+  }
+  header img {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 900px){
+  .features {
+    background-color: rgb(62, 78, 188);
+    color: white;
+    padding: 100px 50px;
+  }
+
+  .icons-container .bi {
+    margin: 0 10px;
+  }
+}
+
+@media screen and (min-width:901px){
+  .features {
+    background-color: rgb(62, 78, 188);
+    color: white;
+    padding: 100px 50px;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .features .grid {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  }
+
+  .features .grid li i {
+    color: rgb(255, 166, 0);
+    font-size: 35px;
+    margin-bottom: 30px;
+  }
+
+  .features .grid li h4 {
+    font-size: 25px;
+    color: rgb(255, 166, 0);
+    margin-bottom: 30px;
+  }
+}
+
+
+.mobile{
+  display: none;
+}
+
+.dp-none {
+  display: none;
+}
+
+.transparent{
+  display: none;
+}
+.menu-hamburguer i {
+  font-size: 4rem;
+  color: orange;
+}
+
+@media screen and (max-width: 900px) {
+  .mobile{
+     display: block;
+   }
+   .desktop{
+     display: none;
+   }
+   .nav-bar-mobile{
+     display: block;
+     width: 50%;
+     background-color:  rgb(255, 255, 255);
+     height: 40%;
+     top: 0;
+     padding: 30px;
+     position: absolute;
+     left: 0;
+     display: flex;
+     flex-direction: column;
+     font-size: 2rem;
+     gap: 20px;
+   }
+   .dp-block{
+    display: block;
+   }
+   .transparent{
+     opacity: 0.5;
+      /* z-index: 2; */
+      position: absolute;
+      top: 200;
+      /* right: 200px; */
+      border: 2px solid #212121;
+      height: 100vh;
+      width: 100%;
+      background-color: #434343;
+      left: 0;
+   }
+ 
+   nav {
+     width: 15%;
+   }
+   
+ }
+ 
+ 
